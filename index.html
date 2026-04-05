@@ -753,18 +753,88 @@
       EARLY ACCESS / STATUS
       ==========================================================================
     -->
-      <section>
-        <div class="container">
-          <div class="status">
-            <strong>Early access status</strong>
-            <p>
-              SmartCart is currently in early pilot mode. We’re focused on
-              making the core experience useful, reliable, and fast before
-              expanding features.
-            </p>
-          </div>
+    <section id="early-access">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Request early access</h2>
+          <p>
+            SmartCart is currently in early pilot. We're focused on making the core experience useful and reliable before expanding access.
+            Leave your details and we’ll invite you as WhatsApp onboarding opens.
+          </p>
         </div>
-      </section>
+    
+        <div class="card" style="max-width: 720px;">
+          <form action="#" method="post">
+            <div style="display: grid; gap: 14px;">
+              <div>
+                <label for="name" style="display:block; font-weight:600; margin-bottom:8px;">
+                  Name
+                </label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Your name"
+                  style="width:100%; min-height:48px; padding:12px 14px; border:1px solid var(--border); border-radius:12px; font:inherit;"
+                />
+              </div>
+    
+              <div>
+                <label for="email" style="display:block; font-weight:600; margin-bottom:8px;">
+                  Email
+                </label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="you@example.com"
+                  style="width:100%; min-height:48px; padding:12px 14px; border:1px solid var(--border); border-radius:12px; font:inherit;"
+                />
+              </div>
+    
+              <div>
+                <label for="whatsapp" style="display:block; font-weight:600; margin-bottom:8px;">
+                  WhatsApp number (optional)
+                </label>
+                <input
+                  id="whatsapp"
+                  name="whatsapp"
+                  type="tel"
+                  placeholder="+94..."
+                  style="width:100%; min-height:48px; padding:12px 14px; border:1px solid var(--border); border-radius:12px; font:inherit;"
+                />
+              </div>
+    
+              <div>
+                <label for="usecase" style="display:block; font-weight:600; margin-bottom:8px;">
+                  What would you use SmartCart for most?
+                </label>
+                <textarea
+                  id="usecase"
+                  name="usecase"
+                  rows="4"
+                  placeholder="Shopping lists, daily spending, family use, etc."
+                  style="width:100%; padding:12px 14px; border:1px solid var(--border); border-radius:12px; font:inherit; resize:vertical;"
+                ></textarea>
+              </div>
+    
+              <div style="display:flex; flex-wrap:wrap; gap:12px; align-items:center;">
+                <button type="submit" class="button button-primary" style="border:none;">
+                  Join early access
+                </button>
+                <span style="color: var(--muted); font-size: 0.92rem;">
+                  Early users get first access when WhatsApp onboarding opens.
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+    
+        <p style="margin-top:16px; color: var(--muted); font-size: 0.9rem;">
+          No spam. No unnecessary notifications. Just a simple tool we’re building in the open.
+        </p>
+      </div>
+    </section>
 
       <!--
       ==========================================================================
@@ -780,13 +850,20 @@
 
           <div class="faq">
             <article class="faq-item">
-              <h3>Is this a shopping app or a budgeting app?</h3>
+              <h3>What exactly is SmartCart?</h3>
               <p>
-                Neither in the traditional sense. SmartCart is a chat-first
-                memory assistant for shopping lists and spending.
+                SmartCart is a chat-first memory assistant for shopping lists and spending.
+                It’s designed to help you quickly capture things and get them back cleanly when you need them.
+              </p>
+            
+            </article>
+            <article class="faq-item">
+              <h3>Why not just use Notes or a to-do app?</h3>
+              <p>
+                Most tools require structure. SmartCart is designed for messy, real-life input — the way people actually think and message. You don’t need to organize anything upfront.
               </p>
             </article>
-
+            
             <article class="faq-item">
               <h3>Do I need to type in a special format?</h3>
               <p>
@@ -852,21 +929,22 @@
     FOOTER
     ==========================================================================
   -->
-    <footer>
-      <div class="container">
-        <div>SmartCart</div>
-        <div style="margin-top: 8px">
-          A WhatsApp-first memory assistant for shopping lists and spending.
-        </div>
-
-        <div style="margin-top: 20px">
-          <!--
-          TODO:
-          Replace with your actual contact / privacy / terms links later.
-        -->
-          Contact: hello@smartcart.chat
-        </div>
+  <footer>
+    <div class="container">
+      <div style="font-weight:600;">SmartCart</div>
+  
+      <div style="margin-top: 8px;">
+        A WhatsApp-first memory assistant for shopping lists and spending.
       </div>
-    </footer>
+  
+      <div style="margin-top: 16px;">
+        Contact: hello@smartcart.chat
+      </div>
+  
+      <div style="margin-top: 12px; font-size: 0.85rem;">
+        Built in Sri Lanka • Early access product
+      </div>
+    </div>
+  </footer>
   </body>
 </html>
